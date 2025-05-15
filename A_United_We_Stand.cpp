@@ -11,20 +11,39 @@ int main(){
     cin >> t;
     while (t--){
         int n;
-        vector<int> a(n);
         cin >> n;
-        map<int, int> mpp;
+        vector<int> v(n);
+        bool check = true;
+        for (int i = 0; i < n; ++i)
+        {
+            cin >> v[i];
+            if(i>=1 && v[i]!=v[i-1])
+                check = false;
+        }
+
+
+        vector<int> b, c;
+        int maxi = *max_element(v.begin(), v.end());
+        if(check){
+            cout<< -1 << endl;
+        }
+        else{
         for (int i = 0; i < n; i++){
-            cin >> a[i];
-            mpp[a[i]]++;
+            if(v[i]==maxi)
+                c.push_back(v[i]);
+            else
+                b.push_back(v[i]);  
         }
-        if(mpp.size()==1){
-            cout << -1 << endl;
-            return 0;
+
+        cout << b.size() << " " << c.size() << endl;
+        for(auto i: b){
+            cout << i << " ";
         }
-        
-        for (auto i: mpp){
-            
+        cout << endl;
+        for(auto i: c){
+            cout << i << " ";
+        }
+        cout << endl;
         }
     }
     return 0;

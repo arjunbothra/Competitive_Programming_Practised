@@ -1,0 +1,1 @@
+{"name":"Local: SumOfSbsequence","url":"/Users/arjunbothra/Desktop/coding/SumOfSbsequence.cpp","tests":[{"id":1746696157963,"input":"1\n3 2\n1 2 1","output":"2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/arjunbothra/Desktop/coding/SumOfSbsequence.cpp","group":"local","local":true}
