@@ -1,0 +1,1 @@
+{"name":"Local: N-queens","url":"/Users/arjunbothra/Desktop/coding/N-queens.cpp","tests":[{"id":1748934402854,"input":"4","output":"2"},{"id":1748935224214,"input":"8","output":"92"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/arjunbothra/Desktop/coding/N-queens.cpp","group":"local","local":true}
