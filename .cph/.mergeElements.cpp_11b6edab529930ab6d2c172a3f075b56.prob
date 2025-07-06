@@ -1,0 +1,1 @@
+{"name":"Local: mergeElements","url":"/Users/arjunbothra/Desktop/coding/mergeElements.cpp","tests":[{"id":1749127220592,"input":"3\n1 2 4 ","output":"14"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/arjunbothra/Desktop/coding/mergeElements.cpp","group":"local","local":true}

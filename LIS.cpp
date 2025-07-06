@@ -1,25 +1,30 @@
 #include<bits/stdc++.h>
 using namespace std;
+#define endl '\n'
 
 
-int solve(int level, vector<int>& v, vector<vector<int>>& dp){
-    //pruning
+// to ind LIS till/of  a particular index(including a particular index);
 
+int solve(int level, vector<int> &v, vector<vector<int>> &dp)
+{
     //base case
     if(level<0)
-        return 0;
-    //cache check
-    if (dp[level][level] != -1)
-        return dp[level][level];
+        return INT_MIN;
+    // pruning
 
+    //cache
+    if(dp[level][level]!= -1 )
+        return dp[level][level];
     int ans = 1;
-    //possibilities
-    for (int i = 0; i < level; i++){
-        //check condition
-        if(v[i]<v[level])
-            ans = max(ans, 1 + solve(i, v, dp));
+
+    for (int i = 0; i < level; i++)
+    {   
+        if(v[i]<v[level]){
+           ans=max(ans,1+solve(i, v, dp));
+        }
     }
-    return dp[level][level]=ans;
+    //save and return 
+    return dp[level][level] = ans;
 }
 
 int main(){

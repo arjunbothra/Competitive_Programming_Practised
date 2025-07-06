@@ -1,0 +1,1 @@
+{"name":"Local: QueensPos2","url":"/Users/arjunbothra/Desktop/coding/QueensPos2.cpp","tests":[{"id":1749285224203,"input":"........\n........\n..*.....\n........\n........\n.....**.\n...*....\n........","output":"65"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/arjunbothra/Desktop/coding/QueensPos2.cpp","group":"local","local":true}

@@ -1,16 +1,23 @@
 #include<bits/stdc++.h>
 using namespace std;
+#define endl '\n'
+#define int long long
 
-int solve(int i, int j, vector<int> & v){
-    //pruning
-    if(i<0 || j<0)
-        return 0;
-    // base case
-    if(i==0 && j==0)
-        return v[i][j];
-}
+class Node{
+    public:
+    int data;
+    struct Node* left;
+    struct Node *right;
 
-int main(){
+    Node(int val){
+        data= val;
+        left=NULL;
+        right = NULL;
+    }
+};
+
+int32_t main()
+{
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
     cout.tie(NULL);
@@ -28,4 +35,3 @@ int main(){
     }
     return 0;
 }
-
