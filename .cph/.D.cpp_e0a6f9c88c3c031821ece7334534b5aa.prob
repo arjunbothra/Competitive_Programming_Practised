@@ -1,0 +1,1 @@
+{"name":"Local: D","url":"/Users/arjunbothra/Downloads/coding/D.cpp","tests":[{"id":1751895820855,"input":"1\n1","output":""},{"id":1751895832664,"input":"16\n1 3 -1 5\n-1 -1 -1 -1\n2 6 -1 10\n8 7 -1 11","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/arjunbothra/Downloads/coding/D.cpp","group":"local","local":true}
