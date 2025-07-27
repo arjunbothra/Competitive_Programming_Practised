@@ -67,3 +67,4 @@ int main() {
     cout << sol.solve(A) << "\n";
     return 0;
 }
+
