@@ -68,3 +68,18 @@ int main() {
     return 0;
 }
 
+
+
+vector<bool> check(int n){
+    vector<bool> isPrime(n + 1, false);
+    if(n>=0)
+        isPrime[0];
+    if(n>=1)
+        isPrime[1];
+    
+        
+}
+
+
+
+

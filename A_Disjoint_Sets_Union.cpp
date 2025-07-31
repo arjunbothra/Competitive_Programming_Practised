@@ -49,6 +49,27 @@ int32_t main(){
     int n, m;
     cin >> n >> m;
 
+    Disjoint DU(n);
+    while(m){
+        string s;
+        int u, v;
+        cin >> s;
+        cin >> u >> v;
+        u--;
+        v--;
+
+        if(s[0] == 'u')
+            DU.UnionRank(u, v);
+
+        else if(s[0] == 'g'){
+            if(DU.isSameSet(u, v)) cout << "YES" << endl;
+            else
+                cout << "NO" << endl;
+        }
+
+        m--;
+    }
+
     return 0;
 }
 
