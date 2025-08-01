@@ -23,15 +23,6 @@ public:
 
     bool sameSet(int i, int j) { return findSet(i) == findSet(j); }
 
-    // int tc(int node, int &components)
-    // {
-    //     if (p[node] == node)
-    //         return components;
-    //     components--;
-
-    //     return tc(p[node], components);
-    // }
-
     void unionSize(int i, int j, int &sz)
     {
         if (!sameSet(i, j))
