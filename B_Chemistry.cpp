@@ -45,7 +45,7 @@ int32_t main(){
             cout << "NO" << endl;
         else
             cout << "YES" << endl;
-    }
+    } 
     return 0;
 }
 
