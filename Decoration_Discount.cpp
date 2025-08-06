@@ -15,24 +15,23 @@ int32_t main(){
     int t;
     cin >> t;
     while (t--){
-        int a, b ,n;
-        cin >> a >> b >> n;
+        int n;
+        cin >> n;
         vector<int> v(n);
         for (int i = 0; i < n; i++){
             cin >> v[i];
         }
 
-
-        int total=b-1;
-        for (int i = 0; i<n; ++i){
-            int curr = min(1+v[i], a);
-            total += curr - 1;
+        int total = INT_MAX;
+        for (int i = 0; i < n - 1; ++i){
+            total = min(v[i] + (v[i+1] / 2), total);
         }
 
-        
-        cout << total+1 << endl;
-    }
+        sort(v.begin(), v.end());
+        total = min(total, v[0] + v[1]);
 
+        cout << total << endl;
+    }
     return 0;
 }
 
