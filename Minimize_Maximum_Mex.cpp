@@ -40,11 +40,7 @@ int32_t main(){
         for (int x = 0; x < size; ++x) {
             if (cnt[x] == n) forced[x] = 1;
         }
-
-        /* ----------------------------------------------------
-           Step 3: find m1 (first unforced integer)
-                    and test whether m2 is forced
-           ---------------------------------------------------- */
+        
         int m1 = 0;
         while (forced[m1]) ++m1;
         int m2 = m1 + 1;
