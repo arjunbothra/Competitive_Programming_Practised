@@ -1,0 +1,1 @@
+{"name":"Local: AncestorQuery","url":"/Users/arjunbothra/Downloads/coding/AncestorQuery.cpp","tests":[{"id":1754659499148,"input":"5\n0 1\n1 2\n1 3\n0 4\n5\n4 0\n1 3\n0 1\n2 0\n3 2","output":"Yes\nNo\nNo\nYes\nNo"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/arjunbothra/Downloads/coding/AncestorQuery.cpp","group":"local","local":true}
