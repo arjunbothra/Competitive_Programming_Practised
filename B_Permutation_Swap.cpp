@@ -17,12 +17,18 @@ int32_t main(){
     while (t--){
         int n;
         cin >> n;
+        vector<int> v(n+1);
+        for (int i = 1; i < n+1; i++){
+            cin >> v[i];
+        }
 
-        int i = 1;
-        while(n%i==0)
-            i++;
+        int mini = 0;
+        for (int i = 1; i < n + 1; ++i)
+        {
+            mini = __gcd(abs(v[i]-i), mini);
+        }
 
-        cout << i - 1 << endl;
+            cout << mini << endl;
     }
     return 0;
 }
