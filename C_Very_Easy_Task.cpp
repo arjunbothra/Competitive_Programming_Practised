@@ -6,11 +6,11 @@ using namespace std;
 bool checker(int t, int n, int x, int y){
     //print one copy first
     int time_taken = min(x, y);
-    int copies = 1;
+    int copies = 0;
     int time_left = t - time_taken;
     if(time_left <0)
         return false;
-    copies += (time_left / x) + (time_left / y);
+    copies += (t / time_taken) + (time_left / y);
     return (copies >= n);
 }
 
