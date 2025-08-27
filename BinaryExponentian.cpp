@@ -2,9 +2,19 @@
 using namespace std;
 #define endl '\n'
 #define int long long
+const int MOD = 1e9 + 7;
 
 //always read question carefully and prove your answer
-
+int binaryExponentian(int a, int b){
+    int res= 1;
+    while(b>0){
+        if(b&1)
+            res = (res * a) % MOD;
+        a = (a * a) % MOD;
+        b >>= 1;
+    }
+    return res;
+}
 
 int32_t main(){
     ios_base::sync_with_stdio(false);
@@ -18,22 +28,9 @@ int32_t main(){
         int n;
         cin >> n;
         vector<int> v(n);
-        int zeroes = 0, ones = 0;
-        int sum = 0;
-        for (int i = 0; i < n; i++)
-        {
+        for (int i = 0; i < n; i++){
             cin >> v[i];
-            if(v[i] == 1)
-                ones++;
-            if(v[i] == 0)
-                zeroes++;
-            sum += v[i];
         }
-
-        int ans;
-        ans = pow(2, zeroes) * ones;
-        cout << ans << endl;
-        
     }
     return 0;
 }
