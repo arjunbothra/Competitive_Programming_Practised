@@ -4,8 +4,30 @@ using namespace std;
 #define int long long
 const int MOD = 1e9 + 7;
 
-//always read question carefully and prove your answer
-int binaryExponentian(int a, int b){
+// always read question carefully and prove your answer
+
+
+
+// NUMBER THEORY AND MATHS
+//  1) SPF
+//  2) Prime Factorisation (Sieve of Eratosthenes)
+//  3) Factorsiation
+//  4) Unique Prime Factors
+//  5) Modular Arithmetic
+//  6) Binary Exponential in TC- log2 pwer;
+//  7) GCD
+//  8) Euclidean Algorithm
+
+
+int EuclideanAlgorithm(int a, int b){
+    while(b) {
+        a %= b;
+        swap(a, b);
+    }
+    return a;
+}
+
+int binaryExponential(int a, int b){    //Binary Exponential 
     int res= 1;
     while(b>0){
         if(b&1)
