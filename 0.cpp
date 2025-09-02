@@ -3,6 +3,7 @@ using namespace std;
 #define endl '\n'
 #define int long long
 
+//always read question carefully and prove your answer
 
 
 int32_t main(){
@@ -23,3 +24,4 @@ int32_t main(){
     }
     return 0;
 }
+
